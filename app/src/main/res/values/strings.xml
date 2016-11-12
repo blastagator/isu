@@ -3,22 +3,22 @@
 
     <!-- main -->
     <string name="app_name">iSu</string>
-    <string name="su_switch">Click to activate or deactivate SU</string>
+    <string name="su_switch">SU Switch:</string>
     <string name="su_state">Current SU State:</string>
-    <string name="su_not_cm">Current SU not supported.\nThe app only works with CM-SU\nDevice current SU version is:</string>
-    <string name="device_not_root">Empty&#8230; Device appears not to be Rooted</string>
-    <string name="su_change_fail">Su State change Fail!</string>
-    <string name="su_on">Su is currently Activated</string>
-    <string name="su_off">Su is currently Deactivated</string>
-    <string name="su_version">Su version:</string>
-    <string name="selinux_switch">Click to activate or deactivate Selinux</string>
-    <string name="selinux_state">Current Selinux State:</string>
-    <string name="selinux_toast_ok">Selinux Set to Enforcing\n This Is Need For Some App Safety Check</string>
-    <string name="selinux_toast_nok">Can\'t changing Selinux State!</string>
-    <string name="isu_kernel_good">iSu Kernel Support OK.</string>
-    <string name="isu_kernel_bad">No iSu Kernel Support!!!\nPlease flash the kernel support .zip or you may loose SU access</string>
-    <string name="isu_kernel_no_su">If you use iSu to deactivate SU and lost SU support try a reboot if you have iSu kernel support, without SU the app can\'t tell if you have reboot support in doubt check XDA thread link in about... XDA support forun site</string>
-    <string name="isu_kernel_folder_link">Click here to go to iSu Download folder</string>
+    <string name="su_not_cm">Current SU not supported.\nThe app only works with CM SU\nDevice current SU version is:</string>
+    <string name="device_not_root">Empty&#8230; Device does not appear to be rooted.</string>
+    <string name="su_change_fail">Failed to change SU state!</string>
+    <string name="su_on">Enabled</string>
+    <string name="su_off">Disabled</string>
+    <string name="su_version">SU version:</string>
+    <string name="selinux_switch">SE-Linux Switch:</string>
+    <string name="selinux_state">Current SE-Linux State:</string>
+    <string name="selinux_toast_ok">SE-Linux set to Enforcing.</string>
+    <string name="selinux_toast_nok">Failed to change SE-Linux state!</string>
+    <string name="isu_kernel_good">iSu kernel support present.</string>
+    <string name="isu_kernel_bad">No iSu kernel support!\nPlease flash the kernel support .zip or you may lose SU access!</string>
+    <string name="isu_kernel_no_su">If you used iSu to deactivate SU and lost SU support try a reboot if you have iSu kernel support, without SU the app can\'t tell if you have reboot support.  If in doubt, check XDA thread link in about.</string>
+    <string name="isu_kernel_folder_link">Click here to go to iSu download folder.</string>
 
     <!-- Main pokemonstrings -->
     <string name="pokemongo_start">hey ho let\'s go play Pokemon!!!</string>
