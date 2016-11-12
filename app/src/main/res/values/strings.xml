@@ -20,7 +20,7 @@
     <string name="isu_kernel_no_su">If you used iSu to deactivate SU and lost SU support try a reboot if you have iSu kernel support, without SU the app can\'t tell if you have reboot support.  If in doubt, check XDA thread link in about.</string>
     <string name="isu_kernel_folder_link">Click here to go to iSu download folder.</string>
 
-    <!-- Main pokemonstrings -->
+    <!-- Main pokemonstrings
     <string name="pokemongo_start">hey ho let\'s go play Pokemon!!!</string>
     <string name="pokemongo_stop">SU ON\n\nPokemon Go Mod signing out</string>
     <string name="pokemongo_1">Lets Grab that Pikachu today</string>
@@ -33,6 +33,7 @@
     <string name="pokemongo_8">Chuck Noris caught all 150 Pokemon in 2.7 seconds.</string>
     <string name="pokemongo_9">How long will it be? before people start naming their kids after Pokemon</string>
     <string name="pokemongo_10">Are you? Activating and deactivating SU just to read my Jokes? Just click iSu icon below :)</string>
+     -->
     <string name="isu_by">iSu by bhb27</string>
 
     <!-- about -->

@@ -68,8 +68,10 @@ public class Main extends Activity {
 
     ImageView ic_launcher;
 
+    /*
     private String[] pokemonstrings;
     private String pokemon_app = "com.nianticlabs.pokemongo";
+    */
 
     private String TAG = Constants.TAG;
 
@@ -80,6 +82,7 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*
         // random poke toast
         pokemonstrings = new String[] {
             getString(R.string.pokemongo_1), getString(R.string.pokemongo_2), getString(R.string.pokemongo_3),
@@ -87,6 +90,7 @@ public class Main extends Activity {
                 getString(R.string.pokemongo_7), getString(R.string.pokemongo_8), getString(R.string.pokemongo_9),
                 getString(R.string.pokemongo_10), getString(R.string.isu_by)
         };
+        */
 
         // Check if is CM-SU
         if (Tools.existFile(xbin_su, true)) {
@@ -152,9 +156,11 @@ public class Main extends Activity {
                         RootUtils.runCommand("mount -o ro,remount /system");
                         if (Tools.existFile(xbin_su, true)) {
                             SuStatus.setText(getString(R.string.su_on));
+                            /*
                             if (isAppInstalled(pokemon_app)) {
                                 DoAToast(getString(R.string.pokemongo_stop));
                             }
+                            */
                         } else
                             SuStatus.setText(getString(R.string.su_change_fail));
                     } else {
@@ -166,6 +172,7 @@ public class Main extends Activity {
                         RootUtils.runICommand("mount -o ro,remount /system");
                         if (Tools.IexistFile(xbin_isu, true)) {
                             SuStatus.setText(getString(R.string.su_off));
+                            /*
                             if (isAppInstalled(pokemon_app)) {
                                 DoAToast(getString(R.string.pokemongo_start));
                                 //repeat two times long toast is too short
@@ -173,6 +180,7 @@ public class Main extends Activity {
                                 DoAToast(pokemonstrings[Randon_number]);
                                 DoAToast(pokemonstrings[Randon_number]);
                             }
+                            */
                         if (!Tools.isSELinuxActive()) {
                             DoAToast(getString(R.string.selinux_toast_ok));
                             RootUtils.runICommand(Constants.SETENFORCE + " 1");
@@ -285,12 +293,14 @@ public class Main extends Activity {
         ic_launcher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 if (isAppInstalled(pokemon_app)) {
                     //repeat two times long toast is too short
                     int Randon_number = RandomInt(pokemonstrings);
                     DoAToast(pokemonstrings[Randon_number]);
                     DoAToast(pokemonstrings[Randon_number]);
                 } else
+                */
                     DoAToast(getString(R.string.isu_by));
             }
         });
@@ -304,6 +314,7 @@ public class Main extends Activity {
         toast.show();
     }
 
+    /*
     // Poke fun simple function to see if pokemongo is installed and call a fun toast base on a random number
     // http://stackoverflow.com/a/27156435/6645820 + http://stackoverflow.com/a/424548/6645820
     //package is installed function
@@ -318,6 +329,7 @@ public class Main extends Activity {
         }
         return installed;
     }
+    */
 
     // Random int base on a String[] length
     public int RandomInt(String[] max_size) {
